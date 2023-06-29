@@ -1,0 +1,12 @@
+# customers-service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: customers-service
+spec:
+  selector:
+    app: customers
+  ports:
+    - protocol: TCP
+      port: 8081
+      targetPort: 8081

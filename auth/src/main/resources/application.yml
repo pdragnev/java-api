@@ -1,9 +1,11 @@
+server:
+  port: 8080
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/jwt_security
+    url: jdbc:postgresql://my-postgresql:5432/jwt_security
     driver-class-name: org.postgresql.Driver
     username: postgres
-    password: example
+    password: OF2Gu99S51
   jpa:
     hibernate:
       ddl-auto: create-drop
