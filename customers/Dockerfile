@@ -1,4 +1,4 @@
-# Dockerfile for the auth service
+# Dockerfile for the customers service
 FROM openjdk:17-alpine
 WORKDIR /app
 COPY ./target/customers-*.jar /app/customers-service.jar

@@ -4,8 +4,10 @@ spring:
   datasource:
     url: jdbc:postgresql://my-postgresql:5432/jwt_security
     driver-class-name: org.postgresql.Driver
-    username: postgres
-    password: OF2Gu99S51
+    username: ${SPRING_POSTGRESQL_USERNAME}
+    password: ${SPRING_POSTGRESQL_PASSWORD}
+  kafka:
+    bootstrap-servers: my-kafka.default.svc.cluster.local:9092
   jpa:
     hibernate:
       ddl-auto: create-drop
